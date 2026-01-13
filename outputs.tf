@@ -22,16 +22,6 @@ output "zone_status" {
   value       = try(huaweicloud_dns_zone.this[0].status, null)
 }
 
-output "zone_created_at" {
-  description = "The creation time of the DNS zone"
-  value       = try(huaweicloud_dns_zone.this[0].created_at, null)
-}
-
-output "zone_updated_at" {
-  description = "The update time of the DNS zone"
-  value       = try(huaweicloud_dns_zone.this[0].updated_at, null)
-}
-
 output "zone_dnssec_infos" {
   description = "DNSSEC information for public zones"
   value       = try(huaweicloud_dns_zone.this[0].dnssec_infos, null)

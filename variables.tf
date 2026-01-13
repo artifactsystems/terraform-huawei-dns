@@ -118,9 +118,9 @@ variable "recordsets" {
     description = optional(string)
     status      = optional(string, "ENABLE")
     # Public zone özellikleri (ileride aktif hale getirilebilir)
-    line_id     = optional(string)
-    weight      = optional(number) # Valid range: 1-1000 (only for public zones)
-    tags        = optional(map(string), {})
+    line_id = optional(string)
+    weight  = optional(number) # Valid range: 1-1000 (only for public zones)
+    tags    = optional(map(string), {})
   }))
   default = {}
 }

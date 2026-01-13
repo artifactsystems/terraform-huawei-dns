@@ -160,8 +160,7 @@ Each recordset in the `recordsets` map supports the following attributes:
 | zone_name | The name of the DNS zone |
 | zone_type | The type of the DNS zone (private or public) |
 | zone_status | The status of the DNS zone |
-| zone_created_at | The creation time of the DNS zone |
-| zone_updated_at | The update time of the DNS zone |
+| zone_dnssec_infos | DNSSEC information for public zones |
 | recordset_ids | Map of recordset IDs keyed by recordset key |
 | recordset_details | Map of recordset details keyed by recordset key |
 | recordset_names | Map of recordset names keyed by recordset key |
